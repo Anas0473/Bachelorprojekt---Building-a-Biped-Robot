@@ -1,4 +1,4 @@
-# 7. Bachelorprojekt – Building a Biped Robot
+# Bachelorprojekt – Building a Biped Robot
 To-benet robot der efterligner menneskelig gang ved hjælp af 3D-printede komponenter, Arduino-baseret servostyring og billedgenkendelse. Raspberry Pi anvendes til håndsporing via kamera, som sender serielle kommandoer til Arduino for at udløse gangbevægelse.
 
 ## Projektoversigt  

@@ -26,14 +26,16 @@ Robotten kombinerer mekanisk design, elektronik og software til at opnå grundl�
 
 ## Inkluderede filer
 
-- `Bachelor_Thesis__Building_a_Biped_Robot.pdf` - Fuld rapport med formål, iterativ udviklingsproces og resultater  
-- `Source_code/` - Indeholder al projektkode til både Arduino og Raspberry Pi:  
-  - `hand_detection.py` – Python-script til håndsporing (MediaPipe + Picamera2)  
-  - `robot_movement/` – Arduino-kode med samlet gangsekvens 
-  - `1.right_leg_forward/` – første trin  
-  - `2.Shift_robot_weight/` – vægtforskydning  
-  - `3.left_foot_forward/` – venstre fod frem  
-  - `4.return_to_neutral/` – tilbage til neutral  
+- `Bachelor_Thesis__Building_a_Biped_Robot.pdf` – Fuld rapport med formål, iterativ udviklingsproces og resultater  
+- `Source_code/` – Indeholder al projektkode til både Arduino og Raspberry Pi:  
+  - `hand_detection.py` – Python-script til håndsporing baseret på MediaPipe og Picamera2  
+  - `robot_movement/` – Samlet Arduino-kode, hvor alle bevægelsestrin er sat sammen til én fuld gangsekvens. Denne sekvens aktiveres via seriel kommunikation, når en hånd registreres af Python-scriptet.  
+  - `1.right_leg_forward/` – Individuel kode til første trin (højre ben frem)  
+  - `2.Shift_robot_weight/` – Kode til vægtforskydning mod venstre ben  
+  - `3.left_foot_forward/` – Kode til venstre fod frem  
+  - `4.return_to_neutral/` – Kode til at bringe robotten tilbage til neutral position  
+
+De fire individuelle mapper repræsenterer hver deres trin i gangcyklussen og blev udviklet og testet separat. De blev derefter samlet i `robot_movement/`, som fungerer som den endelige integrerede gangkode i samspil med Python-baseret håndsporing. 
 
 ## Intention
 

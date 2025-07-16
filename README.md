@@ -10,6 +10,12 @@ To-benet robot der efterligner menneskelig gang ved hjælp af 3D-printede kompon
 - Seriel USB-kommunikation med `isMoving`-logik for at undgå overlap  
 - Robotten går fremad ét trin, når en hånd detekteres inden for 40 cm
 
+## Hardware og elektronik
+- Arduino Nano + specialdesignet PCB (servostyring + strømforsyning)  
+- Raspberry Pi 5 monteret i hovedet, tilsluttet via GPIO og USB  
+- Servoer initialiseres til 90° og testes individuelt med visuelle markører  
+- USB-C PD-modul leverer 15V til to buck converters (5V & 5.1V)  
+
 ## Inkluderede filer
 
 - Bachelor_Thesis__Building_a_Biped_Robot.pdf – Fuld rapport med formål, iterativ udviklingsproces og resultater
@@ -20,9 +26,3 @@ To-benet robot der efterligner menneskelig gang ved hjælp af 3D-printede kompon
 - `2.Shift_robot_weight/` – vægtforskydning  
 - `3.left_foot_forward/` – venstre fod frem  
 - `4.return_to_neutral/` – tilbage til neutral  
-
-## Hardware og elektronik
-- Arduino Nano + specialdesignet PCB (servostyring + strømforsyning)  
-- Raspberry Pi 5 monteret i hovedet, tilsluttet via GPIO og USB  
-- Servoer initialiseres til 90° og testes individuelt med visuelle markører  
-- USB-C PD-modul leverer 15V til to buck converters (5V & 5.1V)  

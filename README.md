@@ -14,6 +14,7 @@ To-benet robot der efterligner menneskelig gang ved hjælp af 3D-printede kompon
 
 - Bachelor_Thesis__Building_a_Biped_Robot.pdf – Fuld rapport med formål, iterativ udviklingsproces og resultater
 - Source_code/ – Indeholder al projektkode til både Arduino (bevægelsessekvenser) og Raspberry Pi (håndregistrering)
+- `hand_detection.py` – Python-script til håndsporing med MediaPipe (Raspberry Pi)
 - `robot_movement/` — Arduino-kode med samlet gangsekvens (udløses ved håndregistrering)  
 - `1.right_leg_forward/` – første trin  
 - `2.Shift_robot_weight/` – vægtforskydning  
